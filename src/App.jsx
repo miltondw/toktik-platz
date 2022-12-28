@@ -1,13 +1,17 @@
-import "./App.css";
 import { Video } from "./components/Video";
-import videoExample from "./assets/big_buck_bunny.mp4";
 import { Layout } from "./components/Layout";
 import { Comments } from "./components/Comments";
+import { CommentsContextProvider } from "./context/CommentsContext";
+import videoExample from "./assets/big_buck_bunny.mp4";
+import "./App.css";
+
 function App() {
   return (
     <Layout>
-      <Video poster="https://picsum.photos/500" source={videoExample} />
-      <Comments />
+      <CommentsContextProvider>
+        <Video poster="https://picsum.photos/500" source={videoExample} />
+        <Comments />
+      </CommentsContextProvider>
     </Layout>
   );
 }

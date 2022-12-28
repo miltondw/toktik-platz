@@ -7,11 +7,8 @@ export const ActionBar = ({
   commentsCount,
   sharesCount,
 }) => {
-  const { active, comments, likes, shares, handleLike } = LogicActionBar(
-    likesCount,
-    commentsCount,
-    sharesCount
-  );
+  const { active, comments, likes, shares, handleLike, handleComment } =
+    LogicActionBar(likesCount, commentsCount, sharesCount);
   return (
     <ul className={styles.listaActionBar}>
       <li className={styles.items}>
@@ -33,7 +30,7 @@ export const ActionBar = ({
         <p className={styles.numbers}> {likes} </p>
       </li>
       <li className={styles.items}>
-        <button>
+        <button onClick={handleComment}>
           <FaComment />
         </button>
         <p className={styles.numbers}> {comments} </p>
