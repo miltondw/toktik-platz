@@ -1,7 +1,12 @@
 import "./App.css";
+import { Video } from "./components/Video";
 
 function App() {
-  return <div className="App"></div>;
+  return (
+    <>
+      <Video source="https://picsum.photos/500" />
+    </>
+  );
 }
 
 export default App;
