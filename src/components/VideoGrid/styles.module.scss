@@ -1,0 +1,11 @@
+.videoGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 7px;
+  margin-top: 2em;
+  padding: 0 0.5em;
+  li {
+    width: 115px;
+    height: 200px;
+  }
+}

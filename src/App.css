@@ -9,9 +9,10 @@ ul {
   padding: 0;
   list-style: none;
 }
-body {
-  background: #010101;
-}
 .invisible {
   display: none;
+}
+#root {
+  max-width: 600px;
+  margin: 0 auto;
 }

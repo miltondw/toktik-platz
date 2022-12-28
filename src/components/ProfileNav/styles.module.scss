@@ -1,0 +1,21 @@
+.list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .item {
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    border: 1px solid #ccc;
+    height: fit-content;
+    &:last-child {
+      border-left: none;
+    }
+    a {
+      display: block;
+      text-decoration: none;
+      color: #010101;
+      font-weight: 600;
+    }
+  }
+}

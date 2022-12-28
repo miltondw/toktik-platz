@@ -1,6 +1,8 @@
 .layout {
   color: #fff;
+  background: #010101;
   font-size: 20px;
+  height: 100vh;
   .header {
     .nav {
       .list {
@@ -18,6 +20,11 @@
         }
       }
     }
+  }
+  .main {
+    min-height: 50vh;
+    display: grid;
+    place-items: center;
   }
   .footer {
     margin: 10px 0;

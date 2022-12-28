@@ -1,0 +1,30 @@
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1em;
+  width: 100%;
+  .profileImg {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  .list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    .item {
+      margin: 20px;
+      text-align: center;
+      p {
+        &:first-child {
+          font-weight: 400;
+        }
+        &:last-child {
+          font-weight: 800;
+        }
+      }
+    }
+  }
+}

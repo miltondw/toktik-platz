@@ -1,4 +1,5 @@
 import { FaHeart, FaComment, FaShare, FaPlus } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import { LogicActionBar } from "./LogicActionBar";
 import styles from "./styles.module.scss";
 export const ActionBar = ({
@@ -12,11 +13,13 @@ export const ActionBar = ({
   return (
     <ul className={styles.listaActionBar}>
       <li className={styles.items}>
-        <img
-          className={styles.profileImg}
-          src={ProfileImg}
-          alt="Profile Image"
-        />
+        <Link to="/profile">
+          <img
+            className={styles.profileImg}
+            src={ProfileImg}
+            alt="Profile Image"
+          />
+        </Link>
         <span className={styles.iconPlus}>
           <FaPlus />
         </span>
