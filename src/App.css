@@ -12,3 +12,6 @@ ul {
 body {
   background: #010101;
 }
+.invisible {
+  display: none;
+}

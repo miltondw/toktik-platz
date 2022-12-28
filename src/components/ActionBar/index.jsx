@@ -1,5 +1,5 @@
-import { useState } from "react";
 import { FaHeart, FaComment, FaShare, FaPlus } from "react-icons/fa";
+import { LogicActionBar } from "./LogicActionBar";
 import styles from "./styles.module.scss";
 export const ActionBar = ({
   ProfileImg,
@@ -7,18 +7,11 @@ export const ActionBar = ({
   commentsCount,
   sharesCount,
 }) => {
-  const [active, setActive] = useState(false);
-  const [likes, setLikes] = useState(likesCount);
-  const [comments, setComments] = useState(commentsCount);
-  const [shares, setShares] = useState(sharesCount);
-  const handleLike = () => {
-    setActive(!active);
-    if (!active) {
-      setLikes(likes + 1);
-    } else {
-      setLikes(likesCount);
-    }
-  };
+  const { active, comments, likes, shares, handleLike } = LogicActionBar(
+    likesCount,
+    commentsCount,
+    sharesCount
+  );
   return (
     <ul className={styles.listaActionBar}>
       <li className={styles.items}>

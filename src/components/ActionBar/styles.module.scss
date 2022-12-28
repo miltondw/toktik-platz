@@ -8,7 +8,11 @@
   .items {
     position: relative;
     margin-bottom: 15px;
-
+    display: grid;
+    place-items: center;
+    &:first-child {
+      margin-bottom: 30px;
+    }
     button {
       svg {
         font-size: 30px;
@@ -18,7 +22,7 @@
 
     .iconPlus {
       position: absolute;
-      bottom: -5px;
+      bottom: -0.6em;
       right: 0;
       left: 0;
       margin: 0 auto;
