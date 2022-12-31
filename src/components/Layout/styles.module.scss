@@ -3,6 +3,9 @@
   background: #010101;
   font-size: 20px;
   height: 100vh;
+  max-width: 400px;
+  border-width: 0 1px;
+  border-style: solid;
   .header {
     .nav {
       .list {
@@ -25,6 +28,7 @@
     min-height: 50vh;
     display: grid;
     place-items: center;
+    position: relative;
   }
   .footer {
     margin: 10px 0;

@@ -5,10 +5,10 @@
   padding-top: 5px;
   position: absolute;
   width: 100%;
-  top: 40%;
-  overflow: scroll;
+  bottom: -12%;
   height: 60%;
   z-index: 200;
+  overflow-x: hidden;
   .btnClose {
     position: absolute;
     right: 3%;
