@@ -1,4 +1,4 @@
-# Platzi Challenge Clone Twitter ("TweetPlatz")
+# Platzi Challenge Clone Tik Tok ("ToktikPlatz")
 
 ## DEMO
 
@@ -10,6 +10,6 @@
 - REACTJS
 - SASS modular
 
-### Deploys
+### Deploy
 
 - Github Pages
